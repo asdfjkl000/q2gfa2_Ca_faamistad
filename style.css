@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(img/bag.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+/* nav bar design */
+nav{
+    position: relative;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0000006b;
+    color: #fff;
+    z-index: 2;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* text header design */
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.text-box h1{
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+}
+
+.container-galaxy {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.galaxy-image {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    width: 400px; 
+    height: 400px;
+    animation: moveGalaxy 20s linear infinite; 
+}
+  
+@keyframes moveGalaxy {
+    0% {
+      left: -50px;
+    }
+    100% {
+      left: calc(100% - 100px);
+    }
+}
+
+.container-planet1 {
+    width: 100%;
+    height: 100%;
+    overflow-wrap: break-word;
+}
+  
+.planet1-image {
+    position: absolute;
+    top: 0;
+    left: 500;
+    animation: movePlanet1 10s linear infinite; 
+}
+  
+@keyframes movePlanet1 {
+    0% {
+        top: -500px;
+        left: 10px;
+    }
+    100% {
+      top: calc(100% - 100px);
+      left: calc(100% - 1px);
+    }
+}
+
+.container-planet2 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+  
+.planet2-image {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 400px; 
+    height: 400px;
+    animation: movePlanet2 60s linear infinite; 
+}
+  
+@keyframes movePlanet2 {
+    0% {
+        top: -100px;
+        left: 0;
+    }
+    100% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+}
+
+.container-planet3 {
+    width: 10%;
+    height: 10%;
+    overflow: hidden;
+}
+  
+.planet3-image {
+    position: absolute;
+    top: 235%;
+    left: 50%;
+    width: 400px; 
+    height: 400px;
+    animation: movePlanet3 50s linear infinite; 
+}
+
+@keyframes movePlanet3 {
+    0% {
+        top: -100px;
+        left: 2423;
+    }
+    100% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+}
